@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" contents="{%if description%}{{description}}{%else%}{{site.description}}{%endif%}">
-    <title>{{site.name}}{%if title%} - {{title}}{%endif%}  </title>
+    <meta name="description" contents="Description of an entry">
+    <title>Rvaise - Entry 1  </title>
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    {{ content | safe }}
+    
+<article>
+    <h1>Entry 1 Title</h1>
+<p>Entry 1 content</p>
+
+</article>
 </body>
 </html>
