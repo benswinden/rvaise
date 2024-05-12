@@ -1,0 +1,15 @@
+---
+title: "Homepage"
+layout: "base.njk"
+permalink: /
+description: "The home page"
+---
+
+<h2>Entries</h2>
+
+<ul>
+    {% for post in collections.entry | reverse %}
+    <img src="{{post.url}}header.jpg" alt="{{ post.data.title }} Header Image" width="500">
+    <li><a href="{{post.url}}">{{ post.data.title }}</a> - {{ post.date }} </li>
+    {% endfor %}
+</ul>
